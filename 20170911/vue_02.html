@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<script type="text/javascript" src="vue.js"></script>
 	<script type="text/javascript">
-		window.onload = function () {
-			// body...
-			new vue({
-				el:'#box'
-				data:{
-					msg:"welcome vue"
-				}
-			});
-		}
+		window.onload=function(){
+            new Vue({
+                el:'#box',
+                data:{
+                    msg:'welcome vue',
+                    msg2:12,
+                    msg3:true,
+                    msg4:['apple','banana','orange'],
+                    json:{a:'apple',b:'qq',c:'ass'}
+                }
+            });
+        };
 	</script>
 </head>
 <body>
     <div id="box">
+    <input type="text" v-model="msg" name="">
     	{{msg}}
+    	<br/>
+    	{{msg2}}
+    	<br>
+    	{{msg3}}
+    	<br>
+    	{{msg4}}
+    	<br>
+    	{{json}}
     </div>
 </body>
 </html>
