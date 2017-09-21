@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+            new Vue({
+                el:'#box',
+                data:{//数据
+                    arr:['apple','banana','orange'],
+                    json:{a:'apple',b:'qq',c:'ass'}
+                },
+				methods:{
+                    add:function () {
+						this.arr.push('watermale')
+                    },
+					remove:function () {
+						this.arr.pop()
+                    }
+
+				}
+            });
+        };
+	</script>
+</head>
+<body>
+    <div id="box">
+		<button type="button" v-on:click="add()">click</button>
+		<button type="button" v-on:dblclick="remove()">double click</button>
+		<button type="button" v-on:mouseover="add()">mouse over</button>
+		<button type="button" v-on:mouseout="remove()">mouse out</button>
+		<button type="button" v-on:mousedown="add()">mouse down</button>
+		<button type="button" v-on:mouseup="remove()">mouse up</button>
+		<br>
+		<ul>
+			<li v-for="val in arr">
+				{{val}}
+			</li>
+		</ul>
+    </div>
+</body>
+</html>
