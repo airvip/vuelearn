@@ -11,33 +11,22 @@
 		window.onload=function(){
             new Vue({
                 el:'#box',
-                data:{
+                data:{//数据
                     arr:['apple','banana','orange'],
                     json:{a:'apple',b:'qq',c:'ass'}
-                }
+                },
+				methods:{
+                    show:function () {
+						alert(1)
+                    }
+				}
             });
         };
 	</script>
 </head>
 <body>
     <div id="box">
-		<ul>
-			<li v-for="value in arr">
-				{{value}} {{$index}}
-			</li>
-		</ul>
-		<hr>
-		<ol>
-			<li v-for="item in json">
-				{{item}} {{$index}} {{$key}}
-			</li>
-		</ol>
-		<hr>
-		<ul>
-			<li v-for="(i,v) in json">
-				{{i}}  {{v}} {{$index}} {{$key}}
-			</li>
-		</ul>
+		<button type="button" v-on:click="show()">click</button>
     </div>
 </body>
 </html>
