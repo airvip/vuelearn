@@ -17,14 +17,14 @@
                 data:{
                     myData:[],
                     username:'',
-                    age:''
+                    age:'',
+                    nowIndex:-100
                 },
                 methods:{
                     add:function () {
                         this.myData.push({
                             name:this.username,
-                            age:this.age,
-                            nowIndex:-100
+                            age:this.age
                         });
                         this.username = '';
                         this.age = '';
@@ -90,7 +90,6 @@
                 </td>
             </tr>
         </table>
-
 
         <!--dialog-->
 
