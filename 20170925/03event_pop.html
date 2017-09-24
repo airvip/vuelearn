@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>事件</title>
+    <style>
+
+    </style>
+    <script src="vue.js"></script>
+    <script>
+        window.onload = function () {
+            new Vue({
+                el:'#box',
+                data:{
+
+                },
+                methods:{
+                    show:function (event) {
+                        alert(1);
+                        event.cancelBubble = true;
+                    },
+                    show2:function () {
+                        alert(2);
+                    }
+                }
+            })
+        };
+    </script>
+</head>
+<body>
+
+<div id="box">
+    <div @click="show2()">
+        <button type="button" @click="show($event)">按钮</button>
+    </div>
+</div>
+
+</body>
+</html>
