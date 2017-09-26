@@ -18,8 +18,8 @@
 
                 },
                 methods:{
-                    show:function () {
-                        alert(1);
+                    show:function (ev) {
+                        alert(ev.keyCode);
                     }
                 }
             })
@@ -29,9 +29,7 @@
 <body>
 
 <div id="box">
-    <div>
-        <button type="button" @contextmenu.prevent="show()">按钮</button>
-    </div>
+    <input type="text" @keydown="show($event)">
 </div>
 
 </body>
