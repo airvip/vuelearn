@@ -18,9 +18,8 @@
 
                 },
                 methods:{
-                    show:function (ev) {
+                    show:function () {
                         alert(1);
-                        ev.preventDefault();//原生阻止默认行为
                     }
                 }
             })
@@ -31,7 +30,7 @@
 
 <div id="box">
     <div @click="show2()">
-        <button type="button" @contextmenu="show($event)">按钮</button>
+        <button type="button" @contextmenu.prevent="show()">按钮</button>
     </div>
 </div>
 
