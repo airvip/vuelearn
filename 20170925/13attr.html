@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>事件</title>
+    <style>
+
+    </style>
+    <script src="vue.js"></script>
+    <script>
+        window.onload = function () {
+            new Vue({
+                el:'#box',
+                data:{
+                    url:'http://fanyi.baidu.com/static/translation/img/header/logo_cbfea26.png'
+                },
+                methods:{
+                    show:function () {
+                        alert('this is up/down/left/right key');
+                    }
+                }
+            })
+        };
+    </script>
+</head>
+<body>
+
+<div id="box">
+    <!--效果会出来，但是会报一个错误-->
+    <!--<img src="{{url}}" alt="">-->
+    <br>
+    <img v-bind:src="url" alt="">
+</div>
+
+</body>
+</html>
