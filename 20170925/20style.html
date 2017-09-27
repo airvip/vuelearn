@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>事件</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            background: deepskyblue;
+        }
+    </style>
+    <script src="vue.js"></script>
+    <script>
+        window.onload = function () {
+            new Vue({
+                el:'#box',
+                data:{
+                    c:{color:'red'},
+                    d:{backgroundColor:'green'}
+                },
+                methods:{
+
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+
+<div id="box">
+    <strong :style="[c,d]">world...</strong>
+</div>
+
+</body>
+</html>
