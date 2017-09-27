@@ -15,7 +15,9 @@
             new Vue({
                 el:'#box',
                 data:{
-                    url:'http://fanyi.baidu.com/static/translation/img/header/logo_cbfea26.png'
+                    url:'http://fanyi.baidu.com/static/translation/img/header/logo_cbfea26.png',
+                    w:'200px',
+                    t:'this is a pic'
                 },
                 methods:{
 
@@ -30,7 +32,7 @@
     <!--效果会出来，但是会报一个错误-->
     <!--<img src="{{url}}" alt="">-->
     <br>
-    <img v-bind:src="url" alt="">
+    <img :src="url" alt="" :width="w" :title="t" :style="" :class="">
 </div>
 
 </body>

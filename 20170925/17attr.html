@@ -7,7 +7,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>事件</title>
     <style>
-
+        .red{
+            color: red;
+        }
+        .blue{
+            background: deepskyblue;
+        }
     </style>
     <script src="vue.js"></script>
     <script>
@@ -15,22 +20,20 @@
             new Vue({
                 el:'#box',
                 data:{
-                    url:'http://fanyi.baidu.com/static/translation/img/header/logo_cbfea26.png'
+                    a:true,
+                    b:false
                 },
                 methods:{
 
                 }
-            })
+            });
         };
     </script>
 </head>
 <body>
 
 <div id="box">
-    <!--效果会出来，但是会报一个错误-->
-    <!--<img src="{{url}}" alt="">-->
-    <br>
-    <img v-bind:src="url" alt="">
+    <strong :class="{red:b,blue:a}">world...</strong>
 </div>
 
 </body>
