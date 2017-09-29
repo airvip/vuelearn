@@ -12,12 +12,24 @@
     <script src="vue.js"></script>
     <script src="vue-resource.js"></script>
     <script>
-
+        window.onload = function () {
+            new Vue({
+                el:'body',
+                data:{},
+                methods:{
+                    get:function () {
+                        this.$http.get('a.txt').then(function (res) {
+                            alert(res.data)
+                        },function () {
+                            alert(res.data)
+                        });
+                    }
+                }
+            });
+        }
     </script>
 </head>
 <body>
-    <div id="box">
-
-    </div>
+    <input type="button" value="submit" @click="get()">
 </body>
 </html>
