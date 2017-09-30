@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83cb5681-31d0-4a6e-9ddf-ca4dc8d75728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170925/28get.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170925/get.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170925/29post.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170925/post.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,21 +16,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="28get.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/20170925/28get.html">
+      <file leaf-file-name="29post.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/20170925/29post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="171">
+              <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20170925/get.php">
+      <file leaf-file-name="post.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/20170925/post.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -90,6 +90,8 @@
         <option value="$PROJECT_DIR$/20170925/27get.html" />
         <option value="$PROJECT_DIR$/20170925/28get.html" />
         <option value="$PROJECT_DIR$/20170925/get.php" />
+        <option value="$PROJECT_DIR$/20170925/post.php" />
+        <option value="$PROJECT_DIR$/20170925/29post.html" />
       </list>
     </option>
   </component>
@@ -709,6 +711,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170925/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170925/29post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
           <folding />
         </state>
       </provider>
