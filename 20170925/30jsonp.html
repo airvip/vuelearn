@@ -21,9 +21,10 @@
                         this.$http.jsonp('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',{
                             wd:'ai'
                         },{
-                            emulateJSON:true
+                            jsonp:'cb'
                         }).then(function (res) {
-                            alert(res.data.s)
+                            alert(res.data.s);
+                            console.log(res);
                         },function (res) {
                             alert(res.status)
                         });
