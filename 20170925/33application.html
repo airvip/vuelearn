@@ -7,7 +7,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>airvip</title>
     <style>
-
+        .gray{
+            background-color: #737373;
+        }
     </style>
     <script src="vue.js"></script>
     <script src="vue-resource.js"></script>
@@ -17,7 +19,8 @@
                 el:'body',
                 data:{
                     myData:[],
-                    t1:''
+                    t1:'',
+                    now:-1
                 },
                 methods:{
                    get:function () {
@@ -28,9 +31,14 @@
                         }).then(function (res) {
                             this.myData = res.data.s;
                         },function (res) {
-                            alert(res.status)
+                            alert(res.status);
                         });
-                    }
+                   },
+                   changeDown:function () {
+                        this.now++;
+                        if(this.now == this.myData.length)this.now = -1;
+                   }
+
                 }
             });
         }
@@ -38,9 +46,11 @@
 </head>
 <body>
     <div id="box">
-        <input type="text" v-model="t1" @keyup="get()">
+        <input type="text" v-model="t1" @keyup="get()" @keydown.down="changeDown()">
         <ul>
-            <li v-for="value in myData">{{value}}</li>
+            <li v-for="value in myData" :class="{gray:$index==now}">
+                {{value}}
+            </li>
         </ul>
         <p v-show="myData.length == 0">暂无数据...</p>
     </div>
