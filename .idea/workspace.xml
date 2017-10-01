@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83cb5681-31d0-4a6e-9ddf-ca4dc8d75728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170925/36application.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/img/ad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/img/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/img/bodyBg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/img/btns.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/img/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/img/inputBg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/img/jj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/img/takeSbmComment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/img/userBj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/vue-resource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/vue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/style/weibo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/weibo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/weibo/weibo_test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +28,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="36application.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/20170925/36application.html">
+      <file leaf-file-name="weibo_test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/20171002/weibo/weibo_test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="242">
+              <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weibo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/20171002/weibo/weibo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -88,6 +111,8 @@
         <option value="$PROJECT_DIR$/20170925/34application.html" />
         <option value="$PROJECT_DIR$/20170925/35application.html" />
         <option value="$PROJECT_DIR$/20170925/36application.html" />
+        <option value="$PROJECT_DIR$/20171002/weibo/weibo.php" />
+        <option value="$PROJECT_DIR$/20171002/weibo/weibo_test.html" />
       </list>
     </option>
   </component>
@@ -98,8 +123,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="516" />
-    <option name="y" value="148" />
+    <option name="x" value="747" />
     <option name="width" value="860" />
     <option name="height" value="728" />
   </component>
@@ -140,7 +164,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="20170925" />
+              <option name="myItemId" value="20171002" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vuelearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vuelearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20171002" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weibo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -158,9 +200,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\vuelearn\20171002\weibo" />
+      <recent name="D:\workspace\vuelearn\20171002\weibo\style" />
+      <recent name="D:\workspace\vuelearn\20171002" />
       <recent name="D:\workspace\vuelearn\20170925" />
       <recent name="D:\workspace\vuelearn\20170911\lib" />
-      <recent name="D:\workspace\vuelearn\20170911" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workspace\vuelearn\20170911\lib" />
@@ -342,7 +386,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="516" y="148" width="860" height="728" extended-state="0" />
+    <frame x="747" y="0" width="860" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -398,27 +442,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/20170911/lib/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170911/jquery-2.1.1.min.js" />
-    <entry file="file://$PROJECT_DIR$/20170911/lib/jquery.min.js" />
-    <entry file="file://$PROJECT_DIR$/20170911/lib/jquery-2.1.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/20170911/05vue_click.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -762,8 +790,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/20170925/36application.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="242">
+          <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171002/vue-resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171002/weibo/weibo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171002/weibo/style/weibo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171002/weibo/weibo_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
           <folding />
         </state>
       </provider>
