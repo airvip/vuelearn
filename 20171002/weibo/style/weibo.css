@@ -7,7 +7,7 @@ a{blr:expression(this.onFocus=this.blur())}
 input,textarea{outline:0;resize:none}
 a{outline:0}
 .znsArea{width:755px;overflow:hidden;margin:0 auto;font-family:"Microsoft YaHei"}
-.commentOn{width:753px;display:block;overflow:hidden;border:#a5bcff solid 1px;background:#f3f8fd;margin-top:25px;font-family:Verdana}
+.commentOn{display:block;overflow:hidden;border:#a5bcff solid 1px;background:#f3f8fd;margin-top:25px;font-family:Verdana}
 .reply{overflow:hidden;padding:10px 20px;background:#FFF;border-top:#e9e9e9 solid 1px;border-bottom:#e9e9e9 solid 1px}
 .userInfo{display:block;overflow:hidden;height:25px;border-bottom:#bababa solid 1px}
 .userName{float:left;background:url(../img/userBj.png) left center no-repeat;padding-left:15px;color:#000;font-size:14px;font-weight:bold}

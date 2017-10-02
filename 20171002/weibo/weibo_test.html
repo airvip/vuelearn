@@ -18,7 +18,8 @@
             new Vue({
                 el:'.znsArea',
                 data:{//vue的属性、数据
-                    t1:''
+                    t1:'',
+                    msgData:[]
                 },
                 methods:{
                     add:function () {
@@ -30,7 +31,7 @@
                                 content:this.t1
                             }
                         }).then(function (res) {
-                            console.log(res.data)
+                            var json = res.data;
                         });
                     }
                 }
@@ -52,27 +53,26 @@
             </div>
 
             <div class="commentOn">
-                <div class="noContent">暂无留言</div>
+                <div class="noContent" v-show="msgData.length == 0">暂无留言</div>
                 <div class="messList">
-                    <div class="reply">
+                    <div class="reply" v-for="item in msgData">
                         <p class="replyContent">
-                            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                            {{item.content}}
                         </p>
                         <p class="operation">
-                            <span class="replyTime">20:00</span>
+                            <span class="replyTime">{{item.time}}</span>
                             <span class="handle">
-                                <a href="javascript:;" class="top">
-                                    0
-                                </a>
-                                <a href="javascript:;" class="down_icon">
-                                    0
-                                </a>
-                                <a href="javascript:;" class="cut">
-                                    删除
-                                </a>
+                                <a href="javascript:;" class="top">{{item.acc}}</a>
+                                <a href="javascript:;" class="down_icon">{{item.ref}}</a>
+                                <a href="javascript:;" class="cut">删除</a>
                             </span>
                         </p>
                     </div>
+                </div>
+                <div class="page">
+                    <a href="javascript:;" class="avtive">1</a>
+                    <a href="javascript:;" >2</a>
+                    <a href="javascript:;" >3</a>
                 </div>
             </div>
         </div>
