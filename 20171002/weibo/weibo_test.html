@@ -32,6 +32,15 @@
                             }
                         }).then(function (res) {
                             var json = res.data;
+                            //msgData 添加数据
+                            this.msgData.unshift({
+                                content:this.t1,
+                                time:json.time,
+                                acc:0,
+                                ref:0,
+                                id:json.id
+                            });
+                            this.t1 = '';
                         });
                     }
                 }
