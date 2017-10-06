@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <style>
+
+    </style>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="box">
+        <input type="button" value="add" @click="add">
+        <ul>
+            <li v-for="val in arr" v-text="val" track-by="$index"></li>
+        </ul>
+    </div>
+    <script>
+        vm = new Vue({
+            data:{
+                arr:['apple','pear','orange']
+            },
+            methods:{
+                add:function () {
+                    this.arr.push('tamato');
+                }
+            }
+        }).$mount('#box');
+
+    </script>
+</body>
+</html>
