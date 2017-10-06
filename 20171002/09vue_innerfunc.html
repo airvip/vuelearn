@@ -17,15 +17,13 @@
     </div>
     <script>
         vm = new Vue({
-            el:'#box',
             data:{
-                'a':1
+                a:1,
+                b:2
             }
-        });
+        }).$mount('#box');
 
-        console.log(vm.$data);
-        vm.$data.a = 'hello';
-
+        console.log(vm.$log());
     </script>
 </body>
 </html>

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83cb5681-31d0-4a6e-9ddf-ca4dc8d75728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/06vue_innerfunc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171002/09vue_innerfunc.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/20171002/07vue_innerfunc.html" afterPath="$PROJECT_DIR$/20171002/07vue_innerfunc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/20171002/08vue_innerfunc.html" afterPath="$PROJECT_DIR$/20171002/08vue_innerfunc.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,21 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="05vue_computed.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20171002/05vue_computed.html">
+      <file leaf-file-name="09vue_innerfunc.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/20171002/09vue_innerfunc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06vue_innerfunc.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/20171002/06vue_innerfunc.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+            <state relative-caret-position="386">
+              <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -51,9 +43,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/20170925/04event_pop.html" />
-        <option value="$PROJECT_DIR$/20170925/06event_default.html" />
-        <option value="$PROJECT_DIR$/20170925/05event_default.html" />
         <option value="$PROJECT_DIR$/20170925/07event_keyboard.html" />
         <option value="$PROJECT_DIR$/20170925/08event_keyboard.html" />
         <option value="$PROJECT_DIR$/20170925/09event_keyboard.html" />
@@ -102,6 +91,9 @@
         <option value="$PROJECT_DIR$/20171002/04vue_computed.html" />
         <option value="$PROJECT_DIR$/20171002/05vue_computed.html" />
         <option value="$PROJECT_DIR$/20171002/06vue_innerfunc.html" />
+        <option value="$PROJECT_DIR$/20171002/07vue_innerfunc.html" />
+        <option value="$PROJECT_DIR$/20171002/08vue_innerfunc.html" />
+        <option value="$PROJECT_DIR$/20171002/09vue_innerfunc.html" />
       </list>
     </option>
   </component>
@@ -360,7 +352,7 @@
     <frame x="704" y="0" width="860" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -413,27 +405,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/20170925/10event_keyboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170925/11event_keyboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170925/12event_keyboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/20170925/13attr.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -780,10 +751,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/20171002/07vue_innerfunc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171002/08vue_innerfunc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/20171002/06vue_innerfunc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171002/09vue_innerfunc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding />
         </state>
       </provider>

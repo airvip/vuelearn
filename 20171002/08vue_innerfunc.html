@@ -14,18 +14,30 @@
 <body>
     <div id="box">
         <p v-text="a"></p>
+        <p >{{aa}}</p>
     </div>
     <script>
+        /*
         vm = new Vue({
-            el:'#box',
             data:{
                 'a':1
             }
         });
+        //手动挂载元素
+        vm.$mount('#box');
+        */
+        vm = new Vue({
+            aa:11,//自定义属性
+            show:function () {
+                alert(1);
+            },
+            data:{
+                'a':1
+            }
+        }).$mount('#box');
 
-        console.log(vm.$data);
-        vm.$data.a = 'hello';
-
+        vm.$options.show();
+        console.log(vm.$options.aa)
     </script>
 </body>
 </html>
