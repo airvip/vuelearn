@@ -13,10 +13,12 @@
 </head>
 <body>
     <div id="box">
-        <span>{{msg}}</span>
-        <span v-text="msg"></span>
-        <span>{{msg1}}</span>
-        <span v-text="msg1"></span>
+        <p>{{msg}}</p>
+        <p v-text="msg"></p>
+        <p>{{msg1}}</p>
+        <p v-text="msg1"></p>
+        <p>{{{msg1}}}</p>
+        <p v-html="msg1"></p>
     </div>
     <script>
         new Vue({
