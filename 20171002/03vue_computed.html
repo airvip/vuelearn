@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <style>
+
+    </style>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="box">
+        <p v-text="a"></p>
+        <p v-text="b"></p>
+    </div>
+    <script>
+        new Vue({
+            el:'#box',
+            data:{
+                'a':1
+            },
+            computed:{
+                b:function () {
+                    return 2;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
