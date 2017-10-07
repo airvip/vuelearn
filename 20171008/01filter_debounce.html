@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <script src="vue.js"></script>
+    <style>
+
+    </style>
+
+</head>
+<body>
+    <div id="box">
+        <!--延迟过滤器 debounce-->
+        <input type="text" @keyup="show | debounce 2000">
+    </div>
+
+    <script>
+        var vm = new Vue({
+            data:{
+            },
+            methods:{
+                show:function () {
+                    alert();
+                }
+            }
+        }).$mount('#box');
+    </script>
+</body>
+</html>
