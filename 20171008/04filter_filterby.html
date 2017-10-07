@@ -14,9 +14,10 @@
 </head>
 <body>
     <div id="box">
+        <input type="text" v-model="search">
         <!--限制过滤器 filterBy-->
         <ul>
-            <li v-for="val in arr | filterBy 'o'" v-text="val"></li>
+            <li v-for="val in arr | filterBy search" v-text="val"></li>
 
         </ul>
     </div>
@@ -24,6 +25,7 @@
     <script>
         var vm = new Vue({
             data:{
+                search:'',
                 arr:['width','height','backgroud','orange']
             },
             methods:{
