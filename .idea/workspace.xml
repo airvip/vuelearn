@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83cb5681-31d0-4a6e-9ddf-ca4dc8d75728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171008/05filter_orderby.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171008/06filter_orderby.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171008/07filter_orderby.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,11 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="06filter_orderby.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="06filter_orderby.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/20171008/06filter_orderby.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="57">
               <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="07filter_orderby.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/20171008/07filter_orderby.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -72,7 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/20170925/20style.html" />
         <option value="$PROJECT_DIR$/20170925/21style.html" />
         <option value="$PROJECT_DIR$/20170925/22template.html" />
         <option value="$PROJECT_DIR$/20170925/23template.html" />
@@ -123,6 +131,7 @@
         <option value="$PROJECT_DIR$/20171008/04filter_orderby.html" />
         <option value="$PROJECT_DIR$/20171008/05filter_orderby.html" />
         <option value="$PROJECT_DIR$/20171008/06filter_orderby.html" />
+        <option value="$PROJECT_DIR$/20171008/07filter_orderby.html" />
       </list>
     </option>
   </component>
@@ -434,13 +443,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/20170925/24filter_uppercase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/20170925/25filter_capitalize.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -817,8 +819,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/20171008/06filter_orderby.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="57">
           <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171008/07filter_orderby.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding />
         </state>
       </provider>
