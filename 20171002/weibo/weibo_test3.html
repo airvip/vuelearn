@@ -15,6 +15,11 @@
         }
     </style>
     <script>
+        Vue.filter('Date',function (input) {
+            var oDate = new Date(input*1000);
+            return oDate.getFullYear()+'-'+(oDate.getMonth() + 1)+'-'+oDate.getDate()
+            +' '+oDate.getHours()+':'+oDate.getMinutes()+':'+oDate.getSeconds();
+        });
         window.onload = function () {
             var URL = 'weibo.php';
             new Vue({
@@ -95,7 +100,7 @@
                             {{item.content}}
                         </p>
                         <p class="operation">
-                            <span class="replyTime">{{item.time}}</span>
+                            <span class="replyTime" v-text="item.time | Date"></span>
                             <span class="handle">
                                 <a href="javascript:;" class="top">{{item.acc}}</a>
                                 <a href="javascript:;" class="down_icon">{{item.ref}}</a>
