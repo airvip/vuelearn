@@ -10,30 +10,32 @@
     <style>
 
     </style>
+    <script>
+        Vue.directive('red',function () {
+            this.el.style.background = 'red';
+        });
+        window.onload = function () {
+            var vm = new Vue({
+                el:'#box',
+                data:{
+                    msg:'a'
+                }
+            });
+        }
+    </script>
 
 </head>
 <body>
     <div id="box">
-        <input type="text" v-model="msg | filterHtml">
-        <div v-html="msg"></div>
+        <div v-red v-html="msg"></div>
     </div>
 
-    <script>
-        Vue.filter('filterHtml',{
-            read:function (input) {//model-view
-                return input.replace(/<[^<+]>/g,'');
-            },
-            write:function (val) {//view-model
-                console.log(val);
-            }
-        });
+    <!--<script>
         var vm = new Vue({
             data:{
                 msg:'<b>welcome</b>'
-            },
-            methods:{
             }
         }).$mount('#box');
-    </script>
+    </script>-->
 </body>
 </html>
