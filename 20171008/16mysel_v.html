@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <script src="vue.js"></script>
+    <style>
+        air-o{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: #000000;
+        }
+    </style>
+    <script>
+        Vue.elementDirective('air-o',{
+            bind:function () {
+                this.el.style.background = 'red';
+            }
+        });
+        window.onload = function () {
+            var vm = new Vue({
+                el:'#box',
+                data:{
+                    msg:'a',
+                    a:'blue'
+                }
+            });
+        }
+    </script>
+
+</head>
+<body>
+    <div id="box">
+        <air-o></air-o>
+    </div>
+</body>
+</html>
