@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83cb5681-31d0-4a6e-9ddf-ca4dc8d75728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171008/18mysel_keyboard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171008/19mysel_keyboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="18mysel_keyboard.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/20171008/18mysel_keyboard.html">
+      <file leaf-file-name="19mysel_keyboard.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/20171008/19mysel_keyboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            <state relative-caret-position="133">
+              <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -41,7 +41,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/20170925/29post.html" />
         <option value="$PROJECT_DIR$/20170925/30jsonp.html" />
         <option value="$PROJECT_DIR$/20170925/31jsonp.html" />
         <option value="$PROJECT_DIR$/20170925/32application.html" />
@@ -92,6 +91,7 @@
         <option value="$PROJECT_DIR$/20171008/16mysel_v.html" />
         <option value="$PROJECT_DIR$/20171008/17mysel_keyboard.html" />
         <option value="$PROJECT_DIR$/20171008/18mysel_keyboard.html" />
+        <option value="$PROJECT_DIR$/20171008/19mysel_keyboard.html" />
       </list>
     </option>
   </component>
@@ -102,7 +102,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="691" />
+    <option name="x" value="532" />
+    <option name="y" value="56" />
     <option name="width" value="778" />
     <option name="height" value="728" />
   </component>
@@ -347,7 +348,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="691" y="0" width="778" height="728" extended-state="0" />
+    <frame x="532" y="56" width="778" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28412256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -403,13 +404,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/20170925/08event_keyboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/20170925/05event_default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -800,6 +794,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171008/19mysel_keyboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
           <folding />
         </state>
       </provider>
