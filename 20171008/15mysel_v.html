@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <script src="vue.js"></script>
+    <style>
+
+    </style>
+    <script>
+        Vue.directive('red',function (color) {
+            this.el.style.background = color;
+        });
+        window.onload = function () {
+            var vm = new Vue({
+                el:'#box',
+                data:{
+                    msg:'a',
+                    a:'blue'
+                }
+            });
+        }
+    </script>
+
+</head>
+<body>
+    <div id="box">
+        <div v-red="a" v-html="msg"></div>
+    </div>
+
+    <!--<script>
+        var vm = new Vue({
+            data:{
+                msg:'<b>welcome</b>'
+            }
+        }).$mount('#box');
+    </script>-->
+</body>
+</html>
