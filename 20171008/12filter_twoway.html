@@ -21,7 +21,7 @@
     <script>
         Vue.filter('filterHtml',{
             read:function (input) {//model-view
-                return input.replace(/<[^<+]>/g,'');
+                return input.replace(/<[^<]+>/g,'');
             },
             write:function (val) {//view-model
                 console.log(val);
