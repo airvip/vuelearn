@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <script src="vue.js"></script>
+    <style>
+    </style>
+    <script>
+
+        window.onload = function () {
+            var vm = new Vue({
+                el:'#box',
+                data:{
+                    a:{name:'airvip',age:18},
+                    b:222
+                }
+            });
+
+            vm.$watch('a',function () {
+                alert('change');
+            },{deep:true});
+            document.onclick = function () {
+                vm.a.name = 'air';
+            };
+        }
+    </script>
+
+</head>
+<body>
+    <div id="box">
+        <p v-text="a | json"></p>
+        <p v-text="b"></p>
+    </div>
+</body>
+</html>
