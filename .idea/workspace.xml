@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83cb5681-31d0-4a6e-9ddf-ca4dc8d75728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171012/05componet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20171012/06componet.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,31 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="05componet.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/20171012/05componet.html">
+      <file leaf-file-name="06componet.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/20171012/06componet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="03componet.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20171012/03componet.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="04componet.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20171012/04componet.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="418">
+              <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -61,7 +41,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/20171002/weibo/weibo_test1.html" />
         <option value="$PROJECT_DIR$/20171002/01vue_life.html" />
         <option value="$PROJECT_DIR$/20171002/weibo/weibo_test2.html" />
         <option value="$PROJECT_DIR$/20171002/02vue_test.html" />
@@ -112,6 +91,7 @@
         <option value="$PROJECT_DIR$/20171012/03componet.html" />
         <option value="$PROJECT_DIR$/20171012/04componet.html" />
         <option value="$PROJECT_DIR$/20171012/05componet.html" />
+        <option value="$PROJECT_DIR$/20171012/06componet.html" />
       </list>
     </option>
   </component>
@@ -423,16 +403,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/20171002/weibo/weibo_test1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="52" column="48" lean-forward="true" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
-          <folding>
-            <element signature="e#813#1618#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/20171002/weibo/weibo_test2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -815,14 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20171012/04componet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/20171012/03componet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -835,6 +797,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171012/04componet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171012/06componet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding />
         </state>
       </provider>
