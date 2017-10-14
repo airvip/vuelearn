@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <script src="bower_components/vue/dist/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <button type="button" @click="a = 'aaa'">组件aaa</button>
+        <button type="button" @click="a = 'bbb'">组件bbb</button>
+        <component :is="a"></component>
+    </div>
+
+<script>
+    var vm = new Vue({
+        el:"#box",
+        data:{
+            a:'aaa'
+        },
+        components:{
+            'aaa':{
+                template:"<h2>我是 aaa </h2>"
+            },
+            bbb:{
+                template:"<h2>我是 bbb </h2>"
+            }
+        }
+    });
+</script>
+</body>
+</html>
