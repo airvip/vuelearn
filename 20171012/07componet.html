@@ -20,10 +20,16 @@
     Vue.component('aaa',{
         data:function(){
             return {
-                msg:'我是标题。。。'
+                msg:'我是标题7。。。'
             };
         },
-        template:'<h3 v-text="msg">  </h3>'
+        methods:{
+          change:function () {
+              alert(1);
+              this.msg = 'change msg';
+          }
+        },
+        template:'<h3 @click="change" v-text="msg">  </h3>'
     });
     var vm = new Vue({
         el:"#box",
