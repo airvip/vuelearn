@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <script src="bower_components/vue/dist/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <my-aaa></my-aaa>
+    </div>
+
+<script>
+    Vue.component('my-aaa',{
+        template:'<h3>h3 in html h3</h3>'
+    });
+
+    var vm = new Vue({
+        el:"#box"
+    });
+</script>
+</body>
+</html>
