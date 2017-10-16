@@ -1,3 +1,5 @@
+bower install vue#1.0.28
+
 slot:
 	位置、槽口
 	作用: 占个位置
