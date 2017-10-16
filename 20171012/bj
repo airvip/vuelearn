@@ -16,6 +16,8 @@ bower-> （前端）包管理器
 	npm install bower -g
 		验证: bower --version
 
+bower install vue#1.0.28
+
 bower install <包名>
 bower uninstall <包名>
 bower info <包名>	查看包版本信息
