@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <script src="bower_components/vue/dist/vue.js"></script>
+    <style>
+
+    </style>
+
+</head>
+<body>
+    <div id="box">
+        <aaa>
+            <ul slot="ul">
+                <li>111</li>
+                <li>222</li>
+                <li>333</li>
+            </ul>
+            <ol slot="ol">
+                <li>111</li>
+                <li>222</li>
+                <li>333</li>
+            </ol>
+        </aaa>
+        <hr>
+        <aaa></aaa>
+    </div>
+    <template id="aaa">
+        <h3 v-text="aaa"></h3>
+        <slot name="ul">default1</slot>
+        <p>welocme in vue</p>
+        <slot name="ol">default2</slot>
+
+    </template>
+<script>
+    var vm = new Vue({
+        el:'#box',
+        data:{
+            'msg':'i thonk so'
+        },
+        methods:{
+
+        },
+        components:{
+            aaa:{
+                data:function () {
+                    return {
+                        'aaa':'i am in aaa component'
+                    };
+                },
+                template:'#aaa'
+            }
+        }
+    });
+</script>
+</body>
+</html>
