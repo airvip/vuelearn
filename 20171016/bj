@@ -1,4 +1,5 @@
 bower install vue#1.0.28
+bower install vue-router#0.7.13
 
 slot:
 	位置、槽口
