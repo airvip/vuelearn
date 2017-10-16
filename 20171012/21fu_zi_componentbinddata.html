@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <script src="bower_components/vue/dist/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <aaa></aaa>
+    </div>
+<template id="aaa">
+    <p v-text="com1"></p>
+    <bbb @child-msg="getData"></bbb>
+</template>
+<template id="bbb">
+    <h3 v-text='son'></h3>
+    <button type="button" @click="send">send</button>
+</template>
+<script>
+    var vm = new Vue({
+        el:"#box",
+        components:{
+            'aaa':{
+                data:function () {
+                  return {
+                      com1:'我是 aaa->parent '
+                  };
+                },
+                template:"#aaa",
+                methods:{
+                    getData:function (msg) {
+                        alert(msg);
+                        this.com1 = msg;
+                    }
+                },
+                components:{
+                    bbb:{
+                        data:function () {
+                          return {
+                              'son':'我是子级'
+                          };
+                        },
+                        template:"#bbb",
+                        methods:{
+                            send:function () {
+                                this.$emit('child-msg',this.son);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>
