@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>airvip</title>
+    <script src="bower_components/vue/dist/vue.js"></script>
+    <script src="bower_components/vue-router/dist/vue-router.js"></script>
+    <style>
+        .v-link-active{
+            font-size: 1.5 rem;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box">
+        <ul>
+            <li><a v-link="{path:'/home'}">home</a></li>
+            <li><a v-link="{path:'/news'}">news</a></li>
+        </ul>
+        <div>
+            <router-view></router-view>
+        </div>
+    </div>
+
+    <template id="home">
+        <h3>i am home page</h3>
+        <div>
+            <a v-link="{path:'/home/login/airvip'}">login</a>
+            <a v-link="{path:'/home/reg/wzb'}">register</a>
+        </div>
+        <div>
+            <router-view></router-view>
+        </div>
+    </template>
+    <template id="news">
+        <h3>i am news page</h3>
+        <div>
+            <a v-link="{path:'/news/detail/0001'}">news detail 001</a>
+            <a v-link="{path:'/news/detail/0002'}">news detail 002</a>
+        </div>
+        <router-view></router-view>
+    </template>
+    <template id="detail">
+        {{$route.params|json}}
+        <br>
+        {{$route.path}}
+        <br>
+        {{$route.query|json}}
+    </template>
+
+<script>
+    //1、准备一个根组件
+    var App = Vue.extend();
+    //2 Home News 组件都准备
+    var Home = Vue.extend({
+        template:'#home'
+    });
+    var News = Vue.extend({
+        template:'#news'
+    });
+    var Detail = Vue.extend({
+        template:'#detail'
+    });
+    //3 准备路由
+    var router = new VueRouter();
+    //4关联
+    router.map({
+        'home':{
+            component:Home,
+            subRoutes:{
+                '/login/:name':{
+                    component:{
+                        template:'<b>i am login information{{$route.params|json}}</b>'
+                    }
+                },
+                'reg/:name':{
+                    component:{
+                        template:'<b>i am register infomation {{$route.params|json}}</b>'
+                    }
+                }
+            }
+        },
+        'news':{
+            component:News,
+            subRoutes:{
+                '/detail/:id':{
+                    component:{
+                        template:'#detail'
+                    }
+                }
+            }
+        }
+    });
+    //5 启动路由
+    router.start(App,'#box');
+    //6 跳转
+    router.redirect({
+        '/':'/home'
+    });
+</script>
+</body>
+</html>
