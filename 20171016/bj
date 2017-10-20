@@ -157,3 +157,19 @@ webpak准备工作:
 
 最最核心：
 
+关于webpack
+webpack-dev-server --inline --hot --port
+
+#原始 package.json
+{
+  "name": "vue-loader01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    //"test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
