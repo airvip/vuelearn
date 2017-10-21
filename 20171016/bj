@@ -149,11 +149,15 @@ webpak准备工作:
 	vue-html-loader、css-loader、vue-style-loader、
 	vue-hot-reload-api@1.3.2
 
+    cnpm install babel-loader babel-core babel-plugin-transform-runtime babel-preset-es2015 babel-runtime --save-dev
+
 	babel-loader
 	babel-core
 	babel-plugin-transform-runtime
 	babel-preset-es2015
 	babel-runtime
+
+	cnpm install vue@1.0.28 --save
 
 最最核心：
 
