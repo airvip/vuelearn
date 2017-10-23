@@ -1,9 +1,15 @@
 <template>
-    <h1>welcome</h1>
-    <p @click="change" v-text='msg'></p>
+    <h3>vue-loader+ vue-router</h3>
+    <div>
+        <a v-link="{path:'/home'}">Home</a>
+        <a v-link="{path:'/news'}">News</a>
+    </div>
+    <router-view></router-view>
 </template>
 
 <script>
+    import Menu from './components/Menu.vue'
+
     export default{
         data(){
             return {
@@ -14,6 +20,9 @@
             change:function(){
                 this.msg = 'change data'
             }
+        },
+        components:{
+            'my-menu':Menu
         }
     }
 </script>
