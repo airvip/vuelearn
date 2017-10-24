@@ -4,24 +4,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
+import routerConfig from './router.config.js'
 
 Vue.use(VueRouter);
-//引入模块
-import Home from './components/Home.vue'
-import News from './components/News.vue'
 
 //配置路由
 const router = new VueRouter();
 
-router.map({
-	'home':{
-		component:
-	}
-});
+router.map(routerConfig);
 
-new Vue({
-	el:'body',
-	components:{
-        app:App
-    }
-});
+router.start(App,'#app')

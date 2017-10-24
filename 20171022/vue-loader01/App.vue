@@ -1,10 +1,12 @@
 <template>
-    <h3>vue-loader+ vue-router</h3>
-    <div>
-        <a v-link="{path:'/home'}">Home</a>
-        <a v-link="{path:'/news'}">News</a>
+    <div id="app">
+        <h3>vue-loader+ vue-router</h3>
+        <div>
+            <a v-link="{path:'/home'}">Home</a>
+            <a v-link="{path:'/news'}">News</a>
+        </div>
+        <router-view></router-view>
     </div>
-    <router-view></router-view>
 </template>
 
 <script>
