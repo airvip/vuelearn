@@ -3,10 +3,10 @@ import Home from './components/Home.vue'
 import News from './components/News.vue'
 
 exort default{
-	'home':{
+	'/home':{
 		component:Home
 	},
-	'news':{
+	'/news':{
 		component:News
 	}
 }
