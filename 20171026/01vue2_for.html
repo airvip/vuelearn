@@ -14,6 +14,11 @@
 				el:'#box',
 				data:{
 					list:['width','height','border']
+				},
+				methods:{
+					addL:function(){
+						this.list.push('backgroud');
+					}
 				}
 			});
 		}
@@ -21,9 +26,9 @@
 </head>
 <body>
 	<div id="box">
+		<button @click="addL">add</button>
 		<ul>
-			<li v-for="val in list">
-				{{val}}
+			<li v-for="val in list" v-text="val" >
 			</li>
 		</ul>
 	</div>
