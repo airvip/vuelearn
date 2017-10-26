@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>vue2</title>
+	<script src="node_modules/vue/dist/vue.js"></script>
+	<script>
+		window.onload = function () {
+			// body...
+			new Vue({
+				el:'#box',
+				data:{
+					list:['width','height','border']
+				},
+				methods:{
+					addL:function(){
+						this.list.push('backgroud');
+					}
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<div id="box">
+		<button @click="addL">add</button>
+		<ul>
+			<li v-for="(val,index) in list" v-text="val + ' ' + index">
+			</li>
+		</ul>
+	</div>
+	
+</body>
+</html>
