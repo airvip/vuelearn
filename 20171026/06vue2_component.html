@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>vue2</title>
+	<script src="node_modules/vue/dist/vue.js"></script>
+	<script>
+		window.onload = function () {
+			// body...
+			new Vue({
+				el:'#box',
+				data:{
+					a:'my parent component data'
+				},
+				components:{
+					'child-com':{
+						template:'#child',
+						data:function(){
+							return {
+								b:''
+							}
+						},
+						methods:{
+							change:function(){
+                                this.b = 'change parent data'
+							}
+						},
+						props:['msg'],
+						mounted:function(){
+							this.b = this.msg
+						}
+						
+					}
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<div id="box">
+		parent data ==> {{a}}
+        <br>
+		<child-com :msg="a"></child-com>
+	</div>
+
+	<template id="child">
+		<div>
+			<span>my is child component</span>
+			<button @click="change">change button</button>
+			<strong v-text="b"></strong>
+		</div>
+	</template>
+	
+</body>
+</html>
