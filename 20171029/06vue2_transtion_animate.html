@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue2</title>
+	<style>
+	    p{
+	    	background: red;
+	    	width: 100px;
+	    	height: 100px;
+	    	margin: 10px auto;
+	    }
+
+	</style>
+	<link rel="stylesheet" href="./animate.css">
+	<script src="./node_modules/vue/dist/vue.js"></script>
+	<script>
+		window.onload = function () {
+			// body...
+			new Vue({
+				el:'#box',
+				data:{
+					show:false
+				}
+			});
+		};
+	</script>
+</head>
+<body>
+	<div id="box">
+		<button type="button" @click="show=!show">显示|隐藏</button>
+
+		<transition-group enter-active-class="zoomInLeft" 
+		leave-active-class="zoomOutRight">
+			<p v-show="show" class="animated" :key="1"></p>
+			<p v-show="show" class="animated" :key="2"></p>
+		</transition-group>
+	</div>
+	
+</body>
+</html>
