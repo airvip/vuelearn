@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue-router</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+        .router-link-active{
+            font-size: 20px;
+            color:#f60;
+        }
+    </style>
+	<!-- <script src="vue.js"></script>
+	<script src="vue-router.js"></script> -->
+	<script src="bower_components/vue/dist/vue.js"></script>
+	<script src="bower_components/vue-router/dist/vue-router.js"	></script>
+</head>
+<body>
+
+    <div id="box">
+        <button type="button" @click="push">add a router</button>
+        <button type="button" @click="replace">replace a router</button>
+    	<div>
+    		<router-link to="/home">home</router-link>	
+    		<router-link to="/user">user</router-link>	
+    	</div>
+    	<div>
+    		<router-view></router-view>
+    	</div>
+    </div>
+
+    <template id="user-com">
+        <div>
+            <h3>i am user page</h3>
+            <ul>
+                <li><router-link to="/user/air/age/10">one user</router-link></li>
+                <li><router-link to="/user/vip/age/20">two user</router-link></li>
+                <li><router-link to="/user/airvip/age/30">three user</router-link></li>
+            </ul>
+            <div>
+                <router-view></router-view>
+            </div>
+        </div>
+    </template>
+
+    <script>
+    	//组件
+    	var Home = {
+    		template:'<h3>i am home page!</h3>'
+    	};
+    	var User = {
+    		template:'#user-com'
+    	};
+        var UserDetail = {
+            template:'<h3 v-text=$route.params></h3>'
+        }
+    
+    	//配置路由
+        const routes=[
+            {path:'/home', component:Home},
+            {
+                path:'/user', 
+                component:User,
+                children:[
+                    {path:':username/age/:age',component:UserDetail}
+                ]
+            },
+            {path:'*', redirect:'/home'}
+        ];
+    
+    	//生成路由实例
+        const router=new VueRouter({
+            routes
+        });
+    
+    	//挂到vue上
+    	new Vue({
+    		router,
+    		// el:'#box',
+            methods:{
+                push(){
+                    router.push({path:'home'});
+                },
+                replace(){
+                    router.replace({path:'user'});
+                }   
+            }
+    	}).$mount('#box');
+    
+    </script>
+	
+</body>
+</html>
