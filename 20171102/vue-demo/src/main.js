@@ -4,7 +4,8 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import routerConfig from './router.config.js'
 
-// import './assets/css/animate.css';
+import '!style-loader!css-loader!./assets/css/animate.css'
+// require('!style-loader!css-loader!./assets/css/animate.css');// get animate.css
 
 Vue.use(VueRouter);
 
