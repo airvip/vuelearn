@@ -1,0 +1,60 @@
+UI组件
+    别人提供好的一堆东西
+
+    目的：为了提高开发效率
+
+    原则：拿过来直接使用
+
+bootstrap：简洁、大方
+
+elementUI
+
+MiniUI
+--------------------------------------------------------------
+
+bootstrap-demo
+
+1、初始化，创建一个基于 webpack-simple 模板的新项目
+$ vue init webpack-simple bootstrap-demo
+
+2、进入项目
+$ cd bootstrap-demo/
+
+3、安装依赖
+$ npm install
+
+4、启动项目
+$ npm run dev
+如果报了默认端口 8080 被占用，可以将 package.json 文件中的
+"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+修改为
+"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8088",
+
+5、使用 bower 安装 bootstrap,有点直接把jquery依赖一同安装
+$ bower install bootstrap
+
+-------------------------------------------------------------
+
+element-demo
+
+1、初始化，创建一个基于 webpack-simple 模板的新项目
+$ vue init webpack-simple element-demo
+
+2、进入项目
+$ cd element-demo/
+
+3、安装依赖
+$ npm install
+
+4、启动项目
+$ npm run dev
+如果报了默认端口 8080 被占用，可以将 package.json 文件中的
+"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+修改为
+"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8088"
+
+
+
+2、安装 element-ui
+$
+

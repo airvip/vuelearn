@@ -3,7 +3,7 @@
 #全局安装vue-cli 
 $ npm install --global vue-cli
 
-#创建一个基于 webpack-aimple 模板的新项目
+#创建一个基于 webpack-simple 模板的新项目
 $ vue init webpack-simple vue-demo
 
 #进入项目
