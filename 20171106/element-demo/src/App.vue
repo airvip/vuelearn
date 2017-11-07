@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     {{msg}}
+    <el-button type="primary">主要按钮</el-button>
   </div>
 </template>
 
