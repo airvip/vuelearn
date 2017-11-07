@@ -42,10 +42,25 @@ module.exports = {
           ],
           exclude: /node_modules/
       },*/
+      /*{
+          test: /\.(less)$/,
+          exclude: /node_modules/,
+          use: ExtractTextPlugin.extract({
+              fallback: "style-loader",
+              use: [
+                  {loader: "css-loader"},
+                  {loader: "less-loader"},
+              ],
+          })
+      },*/
       {
           test: /\.css$/,
           loader: 'style-loader!css-loader'
       }, 
+      {
+          test: /\.less$/,
+          loader: 'less'
+      },
       {
           test: /\.(eot|woff|woff2|ttf)([\?]?.*)$/,
           loader: 'file-loader'

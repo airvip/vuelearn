@@ -1,7 +1,20 @@
 <template>
   <div id="app">
-    {{msg}}
+    <el-button>默认按钮</el-button>
     <el-button type="primary">主要按钮</el-button>
+    <el-button type="success">成功按钮</el-button>
+    <el-button type="info">信息按钮</el-button>
+    <el-button type="warning">警告按钮</el-button>
+    <el-button type="danger" icon="el-icon-delete">危险按钮</el-button>
+
+    <el-row>
+      <el-col :span="12">
+        <div class="my-grid">122</div>
+      </el-col>
+      <el-col :span="12">
+        <div class="my-grid">122</div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -16,31 +29,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped lang="less">
+@color:red;
+.height(@h){
+  height:@h;
 }
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+.my-grid {
+  .height(50px);
+  border:1px solid @color;
 }
 </style>
