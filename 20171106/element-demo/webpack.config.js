@@ -42,11 +42,14 @@ module.exports = {
           ],
           exclude: /node_modules/
       },*/
-      /*{
+      {
           test: /\.css$/,
-          loader: 'file-loader!style-loader!css-loader',
-          exclude: /node_modules/
-      },*/
+          loader: 'css-loader'
+      }, 
+      {
+          test: /\.(eot|woff|woff2|ttf)([\?]?.*)$/,
+          loader: 'file-loader'
+      },
       {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
