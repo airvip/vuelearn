@@ -103,3 +103,62 @@ $ npm install style-loader --save-dev
 要想使用 less ,less 需要两个模块 less 及 less-loader
 $ npm install less less-loader --save-dev
 
+11、编写组件一定要写一个根元素
+
+
+--------------------------------------------------
+
+element-demo2  按需引入
+
+1、初始化，创建一个基于 webpack-simple 模板的新项目
+$ vue init webpack-simple element-demo2
+
+2、进入项目
+$ cd element-demo/
+
+3、安装依赖
+$ npm install
+
+4、启动项目
+$ npm run dev
+如果报了默认端口 8080 被占用，可以将 package.json 文件中的
+"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+修改为
+"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8088"
+
+5、安装 element-ui
+$ npm i element-ui -D
+
+6、安装 babel-plugin-component
+$ npm install babel-plugin-component -D
+
+7、在 .babelrc 文件修改为
+{
+  "presets": [
+    ["env", { "modules": false }],
+    "stage-3"
+  ],
+  "plugins": [["component", [
+    {
+      "libraryName": "element-ui",
+      "styleLibraryName": "theme-chalk"
+    }
+  ]]]
+}
+
+8、在 main.js 中全局引入部分组件，例如 Button Select
+import { Button, Select } from 'element-ui'
+
+9、在 main.js 中使用组件
+Vue.use(Button)
+Vue.use(Select)
+
+10、现在可能由于字体无法解析编译而报错，在 webpack.config.js 中添加
+{
+  test: /\.(eot|woff|woff2|ttf)([\?]?.*)$/,
+  loader: 'file-loader'
+},
+
+并重新运行 npm run dev
+
+11、现在就可以在自己编写的组件中使用 element-ui 组件了
