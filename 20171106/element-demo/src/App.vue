@@ -12,19 +12,25 @@
         <div class="my-grid">122</div>
       </el-col>
       <el-col :span="12">
-        <div class="my-grid">122</div>
+        <div class="my-grid">
+          <Date></Date>
+        </div>
       </el-col>
     </el-row>
   </div>
 </template>
 
 <script>
+import Date from '../components/Date.vue'
 export default {
   name: 'app',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components:{
+    Date
   }
 }
 </script>
