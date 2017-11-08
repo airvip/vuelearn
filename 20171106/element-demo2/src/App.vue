@@ -33,8 +33,11 @@ export default {
   name: 'app',
   data () {
     return {
-      myMsg: 'Welcome to my space'
+      myMsg: ''
     }
+  },
+  mounted(){
+    this.get();
   },
   methods:{
     show(){
