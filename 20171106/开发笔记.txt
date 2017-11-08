@@ -53,8 +53,53 @@ $ npm run dev
 修改为
 "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8088"
 
+5、安装 element-ui
+$ npm i element-ui -D
+npm i element-ui -D 等价于  npm install element-ui --save-dev
+i    ->  install
+-D   ->  --save-dev
+-S   ->  --save
 
+6、全局引入在 main.js
+import ElementUI from 'element-ui'
 
-2、安装 element-ui
-$
+7、引入之后就要在 main.js 中使用
+Vue.use(ElementUI);
+
+再将下面代码配置到 webpack.conf.js 中的 module.rules 中,并重新npm run dev
+{
+  test: /\.css$/,
+  loader: 'css-loader'
+}, 
+{
+  test: /\.(eot|woff|woff2|ttf)([\?]?.*)$/,
+  loader: 'file-loader'
+},
+
+修改了 webpack 配置文件一定要重新运行才能看到效果
+
+8、现在可以在组件中使用 element-ui 了
+来个按钮 <el-button type="primary">主要按钮</el-button>
+
+没有效果，现在就需要使用 style-loader 来解析了
+
+9、安装 style-loader 
+$ npm install style-loader --save-dev
+
+修改 webpack.conf.js 中的
+
+{
+  test: /\.css$/,
+  loader: 'css-loader'
+}, 
+修改为
+{
+  test: /\.css$/,
+  loader: 'style-loader!css-loader'
+}, 
+再在命令行重新运行 npm run dev
+
+10、再战 less
+要想使用 less ,less 需要两个模块 less 及 less-loader
+$ npm install less less-loader --save-dev
 
