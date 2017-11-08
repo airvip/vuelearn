@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import { Button, Select } from 'element-ui'
-Vue.use(Button)
+import './element-ui.js'
 
 new Vue({
   el: '#app',
