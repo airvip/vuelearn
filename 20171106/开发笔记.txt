@@ -162,3 +162,26 @@ Vue.use(Select)
 并重新运行 npm run dev
 
 11、现在就可以在自己编写的组件中使用 element-ui 组件了
+
+12、使用 axios 发送请求获取数据，不再推荐使用 vue-resourse,
+先安装 axios
+$ npm i axios -D
+
+-----------------------------------------------------------
+mint-demo
+
+1、初始化，创建一个基于 webpack-simple 模板的新项目
+$ vue init webpack-simple mint-demo
+
+2、进入项目
+$ cd element-demo/
+
+3、安装依赖
+$ npm install
+
+4、启动项目
+$ npm run dev
+如果报了默认端口 8080 被占用，可以将 package.json 文件中的
+"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+修改为
+"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8088"
