@@ -174,7 +174,7 @@ mint-demo
 $ vue init webpack-simple mint-demo
 
 2、进入项目
-$ cd element-demo/
+$ cd mint-demo/
 
 3、安装依赖
 $ npm install
@@ -185,3 +185,13 @@ $ npm run dev
 "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
 修改为
 "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8088"
+
+5、下载 mint-ui
+$ cnpm install mint-ui -D
+
+6、在 main.js 全局引入并使用
+import Mint from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(Mint)
+
+7、现在就可以在 组件中使用 mint-ui 了
