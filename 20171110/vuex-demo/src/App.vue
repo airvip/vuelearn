@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    {{msg}}
+    <button type="button" @click="increment">增加</button>
+
+    <div>
+      现在的数字：0
+    </div>
   </div>
 </template>
 
 <script>
+import {mapGetters,mapActions} from 'vuex'
+
 export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome vuex'
-    }
-  }
+  methods:mapActions([
+      'increment'
+    ])
 }
 </script>
 
