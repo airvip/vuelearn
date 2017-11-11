@@ -1,9 +1,0 @@
-自定义组件
-
-习惯结构：
-
-		|--loading/
-		    |-index.js  //导出组件，并且install
-		    |-Loading.vue //Loading 组件
-
-

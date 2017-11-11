@@ -1,0 +1,33 @@
+自定义组件
+
+习惯结构：
+
+		|--loading/
+		    |-index.js  //导出组件，并且install
+		    |-Loading.vue //Loading 组件
+
+
+
+
+-----------------------------
+
+vuex-demo开发笔记
+
+1、初始化，创建一个基于 webpack-simple 模板的新项目
+$ vue init webpack-simple vuex-demo
+
+2、进入项目
+$ cd vuex-demo/
+
+3、安装依赖
+$ npm install
+
+4、下载安装 vuex
+$ npm install vuex -D
+
+5、启动项目
+$ npm run dev
+如果报了默认端口 8080 被占用，可以将 package.json 文件中的
+"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+修改为
+"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8088",
