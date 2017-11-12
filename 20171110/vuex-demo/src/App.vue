@@ -6,7 +6,7 @@
     <button type="button" @click="clickAsync">点击异步</button>
 
     <div>
-      现在的数字：{{count}}
+      现在的数字：{{count}} , 现在 {{isOdd}} 偶数。
     </div>
   </div>
 </template>
@@ -16,7 +16,8 @@ import {mapGetters,mapActions} from 'vuex'
 
 export default {
   computed:mapGetters([
-      'count'
+      'count',
+      'isOdd'
     ]),
     /*computed:{
       count(){

@@ -47,6 +47,9 @@ const actions = {
 const getters = {
 	count(state, getters){
 		return state.count;
+	},
+	isOdd(state, getters){
+		return 0 == state.count%2 ? '是':'不是';
 	}
 };
 
