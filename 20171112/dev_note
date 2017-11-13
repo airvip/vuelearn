@@ -21,7 +21,7 @@ $ cd vue-news/
 3、安装依赖
 $ npm install
 
-4、安装相关组件
+4、安装相关模块
 $ npm install vuex vue-router axios -D
 
 5、启动项目
