@@ -31,4 +31,7 @@ $ npm run dev
 修改为
 "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8088",
 
+6、下载 mint-ui
+$ npm install mint-ui -D
+
 
