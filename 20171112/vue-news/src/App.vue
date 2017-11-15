@@ -20,13 +20,25 @@
       <!-- tab-container -->
       <mt-tab-container v-model="selected">
         <mt-tab-container-item id="1">
-          <mt-cell v-for="n in 3" >{{n}}</mt-cell>
+          <mt-cell v-for="n in 3" >
+            <div class="title">title</div>
+            <div class="content">双十一的到来，几乎就是一个野生的大蛋糕。所有商家都忙着去分一块羮，其中最受瞩目的莫过于马云的阿里巴巴和刘强东的京东了。</div>
+            <div class="time">2017/11/14 00:00:12</div>
+          </mt-cell>
         </mt-tab-container-item>
         <mt-tab-container-item id="2">
-          <mt-cell v-for="n in 2" >{{n}}</mt-cell>
+          <mt-cell v-for="n in 2" >
+            <div class="title">title</div>
+            <div class="content">性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的。</div>
+            <div class="time">2017/11/14 00:00:12</div>
+          </mt-cell>
         </mt-tab-container-item>
         <mt-tab-container-item id="3">
-          <mt-cell v-for="n in 4" >{{n}}</mt-cell>
+          <mt-cell v-for="n in 4" >
+            <div class="title">title</div>
+            <div class="content">大家好像总是觉得换手机特别麻烦，每次一说起换手机号，就说手机绑定涉及的东西太多了，换了很麻烦等等。</div>
+            <div class="time">2017/11/14 00:00:12</div>
+          </mt-cell>
         </mt-tab-container-item>
       </mt-tab-container>
     </div>
@@ -65,10 +77,14 @@ export default {
 <style lang="scss">
 body{margin: 0;padding: 0;}
 
+#swipe{
+  margin-top: 3px;
+}
 .mint-swipe{
   height:200px;
   font-size:30px;
   text-align:center;
+  position: relative;
 }
 .mint-swipe-item{
   line-height: 200px;
@@ -83,7 +99,26 @@ body{margin: 0;padding: 0;}
 .slide3{
   background-color: #360;
 }
-
-
+.mint-cell-value{
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.mint-cell-value .title{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.mint-cell-value .content{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #999;
+    line-height: 18px;
+}
+.mint-cell-value .time{
+    font-size: 14px;
+    color: #999;
+    line-height: 18px;
+    align-self: flex-end;
+}
 
 </style>
