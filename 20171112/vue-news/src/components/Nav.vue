@@ -2,9 +2,21 @@
 	<div id="nav">
 		<div class="nav">
 	      <mt-navbar class="page-part" v-model="selected">
-	        <mt-tab-item id="1">首页</mt-tab-item>
-	        <mt-tab-item id="2">关注</mt-tab-item>
-	        <mt-tab-item id="3">栏目</mt-tab-item>
+	      	<mt-tab-item id="1">
+				<router-link :to="{path:'home'}">
+	      			首页
+				</router-link>
+	      	</mt-tab-item>
+        	<mt-tab-item id="2">
+        		<router-link :to="{path:'follow'}">
+        			关注
+	        	</router-link>
+	        </mt-tab-item>
+			<mt-tab-item id="3">
+				<router-link :to="{path:'column'}">
+	       			栏目
+	        	</router-link>
+	        </mt-tab-item>
 	      </mt-navbar>
     	</div>
 	</div>

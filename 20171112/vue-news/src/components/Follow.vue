@@ -11,3 +11,9 @@
 	      </mt-tab-container>
 	</div>
 </template>
+
+<style scoped>
+	#content{
+		margin-top: 3px;
+	}
+</style>
