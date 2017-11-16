@@ -10,7 +10,7 @@
 	        <img slot="icon" src="../assets/logo.png" >
 	        搜索
 	      </mt-tab-item>
-	      <mt-tab-item id="my">
+	      <mt-tab-item id="my" href="http://www.baicu.com">
 	        <img slot="icon" src="../assets/logo.png" >
 	        我的
 	      </mt-tab-item>

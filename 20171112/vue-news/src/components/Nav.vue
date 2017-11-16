@@ -33,6 +33,10 @@
 </script>
 
 <style scoped>
+.mint-tab-item-label a{
+	text-decoration: none;
+	font-weight: bolder;
+}
 .mint-cell-value{
   flex-direction: column;
   align-items: flex-start;
