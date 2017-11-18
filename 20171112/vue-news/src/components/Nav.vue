@@ -7,7 +7,7 @@
 	      			首页
 				</router-link>
 	      	</mt-tab-item>
-        	<mt-tab-item id="2">
+        	<mt-tab-item id="2" >
         		<router-link :to="{path:'follow'}">
         			关注
 	        	</router-link>
@@ -20,7 +20,8 @@
 	      </mt-navbar>
     	</div>
 	</div>
-</template>
+</template> 
+
 
 <script>
 	export default{
@@ -36,6 +37,9 @@
 .mint-tab-item-label a{
 	text-decoration: none;
 	font-weight: bolder;
+}
+.mint-tab-item.is-selected a{
+	color:#26a2ff;
 }
 .mint-cell-value{
   flex-direction: column;
