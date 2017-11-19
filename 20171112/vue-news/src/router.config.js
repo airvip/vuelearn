@@ -8,4 +8,5 @@ export default [
 {path:'/home',component:Home},
 {path:'/follow',component:Follow},
 {path:'/column',component:Column},
-{path:'/user-info',component:Userinfo}];
+{path:'/user-info',component:Userinfo}
+];
