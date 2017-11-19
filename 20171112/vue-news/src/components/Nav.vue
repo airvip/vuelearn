@@ -4,7 +4,7 @@
 	      <mt-navbar class="page-part" v-model="selected">
 	      	<mt-tab-item id="1">
 				<router-link :to="{path:'home'}">
-	      			首页
+	      			推荐
 				</router-link>
 	      	</mt-tab-item>
         	<mt-tab-item id="2" >

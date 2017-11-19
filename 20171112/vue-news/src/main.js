@@ -6,6 +6,8 @@ Vue.use(Mint)
 
 import VueRouter from 'vue-router'
 import routerConfig from './router.config.js'
+import store from './store/'
+
 Vue.use(VueRouter);
 const router = new VueRouter({
 	mode:'history',

@@ -13,7 +13,18 @@
 import NavView from './components/Nav.vue'
 import FooterView from './components/Footer.vue'
 
+import {mapGetters,mapActions} from 'vuex';
+
 export default {
+  watch:{//用于监听路由变化
+    $route(to,from){
+      console.log('to:'+to.path);
+      console.log('from:'+from.path);
+      if(to.path=='/user-info'){
+        this.$store.dispath('show-header')
+      }
+    }
+  },
   components:{
     NavView,
     FooterView
