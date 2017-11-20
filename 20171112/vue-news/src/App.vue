@@ -21,7 +21,7 @@ export default {
       console.log('to:'+to.path);
       console.log('from:'+from.path);
       if(to.path=='/user-info'){
-        this.$store.dispath('show-header')
+        this.$store.dispath('hideHeader')
       }
     }
   },
