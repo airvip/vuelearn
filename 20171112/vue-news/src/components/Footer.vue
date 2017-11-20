@@ -11,12 +11,12 @@
 		      </mt-tab-item>
 		  
 	      
-		      <mt-tab-item id="search"> 
-		      	<img slot="icon" src="../assets/logo.png" >
-			    <router-link to="/follow" tag='div'>
-			        搜索
-		    	</router-link>
-		      </mt-tab-item>
+		     <!--  <mt-tab-item id="search"> 
+		     	<img slot="icon" src="../assets/logo.png" >
+		     			    <router-link to="/follow" tag='div'>
+		     			        搜索
+		     		    	</router-link>
+		     </mt-tab-item> -->
 		  
 
 	      
