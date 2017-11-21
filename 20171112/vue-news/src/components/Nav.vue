@@ -1,7 +1,7 @@
 <template>
 	<div id="nav">
 		<div class="nav">
-	      <mt-navbar class="page-part" v-model="selected">
+	      <mt-navbar class="page-part" v-model="navNum">
 	      	<mt-tab-item id="1">
 				<router-link :to="{path:'home'}">
 	      			推荐
@@ -25,11 +25,11 @@
 
 <script>
 	export default{
-		  data () {
-		    return {
-		      selected:'1'
-		    }
-		  }
+	  data () {
+	    return {
+	      navNum:'1'
+	    }
+	  }
 	}
 </script>
 

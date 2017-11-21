@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <loading v-show="loading"></loading> -->
     <NavView v-show="headerShow"></NavView>
     <div>
       <router-view class="router-view"></router-view>
@@ -17,7 +18,7 @@ import {mapGetters,mapActions} from 'vuex';
 
 export default {
   computed:mapGetters([
-    'headerShow'
+    'headerShow','loading'
     ]),
   watch:{//用于监听路由变化
     $route(to,from){
@@ -26,7 +27,7 @@ export default {
       if(to.path=='/user-info'){
         this.$store.dispatch('hideHeader')
       }else if(to.path=='/home'){
-        this.$store.dispatch('showHeader')
+        this.$store.dispatch('showHeader');
       }
     }
   },
