@@ -53,6 +53,9 @@
 </template>
 
 <style scoped>
+	.mint-tabbar{
+		position: fixed;
+	}
 	.mint-tab-item{
 		color: #000;
 	} 

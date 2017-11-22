@@ -8,10 +8,10 @@ import VueRouter from 'vue-router'
 import routerConfig from './router.config.js'
 import store from './store/'
 import axios from 'axios'
-import Loading from './components/loading/index.js'
+// import Loading from './components/loading'
 
 Vue.use(VueRouter);
-Vue.use(Loading);
+// Vue.use(Loading);
 
 //关于axios配置
 axios.interceptors.request.use(function(config){
@@ -26,6 +26,9 @@ axios.interceptors.response.use(function(response){
 },function(error){
 	return Promise.reject(error);
 });
+axios.defaults.baseURL='http://localhost:8080/';
+// axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+Vue.prototype.$http = axios;
 
 const router = new VueRouter({
 	mode:'history',

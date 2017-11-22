@@ -4,10 +4,13 @@
 	      <!-- tab-container -->
       <mt-tab-container>
         <mt-tab-container-item >
-          <mt-cell v-for="n in 3" >
-            <div class="title">title</div>
-            <div class="content">双十一的到来，几乎就是一个野生的大蛋糕。所有商家都忙着去分一块羮，其中最受瞩目的莫过于马云的阿里巴巴和刘强东的京东了。</div>
-            <div class="time">2017/11/14 00:00:12</div>
+          <mt-cell v-for="(item,index) in arrList" >
+          	<router-link :to="'/article/'+item.id">
+          		<div class="title">{{index+1}} . {{item.title}}</div>
+            <div class="content">{{item.detail}}</div>
+          	</router-link>
+            
+           <!--  <div class="time">2017/11/14 00:00:12</div> -->
           </mt-cell>
         </mt-tab-container-item>
       </mt-tab-container>
@@ -21,8 +24,23 @@
 		  },
 		  data () {
 		    return {
-		  
+		  		arrList:[]
 		    }
+		  },
+		  mounted(){
+		  	//获取数据
+		  	this.fetchData();
+		  },
+		  methods:{
+		  	fetchData(){
+		  		var _this = this;
+		  		this.$http.get('src/data/index.data').then(function(res){
+		  			// console.log(res)
+		  			_this.arrList = res.data;
+		  		}).catch(function(err){
+		  			console.log('Home',err)
+		  		});
+		  	}
 		  }
 	}
 </script>

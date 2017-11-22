@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <!-- <loading v-show="loading"></loading> -->
+    <Loading v-show="loading"></Loading>
     <NavView  v-show="headerShow"></NavView>
 
-    <div>
-      <router-view class="router-view"></router-view>
+    <div id="com">
+      <keep-alive>
+        <router-view class="router-view"></router-view>
+      </keep-alive> 
     </div>
     <FooterView></FooterView>
     
@@ -14,6 +16,7 @@
 <script>
 import NavView from './components/Nav.vue'
 import FooterView from './components/Footer.vue'
+import Loading from './components/loading/Loading.vue'
 
 import {mapGetters,mapActions} from 'vuex';
 
@@ -34,7 +37,8 @@ export default {
   },
   components:{
     NavView,
-    FooterView
+    FooterView,
+    Loading
   },
   mounted:function () {
     if(this.$route.path == '/user-info'){
@@ -46,7 +50,7 @@ export default {
 
 <style lang="scss">
 body{margin: 0;padding: 0;}
-
+#com{margin-bottom: 60px;}
 .mint-cell-value{
   flex-direction: column;
   align-items: flex-start;
@@ -55,6 +59,9 @@ body{margin: 0;padding: 0;}
 .mint-cell-value .title{
     margin-bottom: 5px;
     font-size: 18px;
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
 }
 .mint-cell-value .content{
     margin-bottom: 5px;
