@@ -51,3 +51,13 @@
 	    </div>
 	</div>
 </template>
+
+<style scoped>
+	.mint-tab-item{
+		color: #000;
+	} 
+	.router-link-active{
+		color: #26a2ff;
+		font-weight: bolder;
+	}
+</style>

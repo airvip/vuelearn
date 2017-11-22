@@ -56,32 +56,14 @@
 </script>
 
 <style scoped>
-.mint-tab-item-label a{
-	text-decoration: none;
-	font-weight: bolder;
+.mint-tab-item{
+	color: #000;
 }
-.mint-tab-item.is-selected a{
-	color:#26a2ff;
+.router-link-active{
+	border-bottom: 3px solid #26a2ff;
+    color: #26a2ff;
+    margin-bottom: -3px;
+    font-weight: bolder;
 }
-.mint-cell-value{
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 10px;
-}
-.mint-cell-value .title{
-    margin-bottom: 5px;
-    font-size: 18px;
-}
-.mint-cell-value .content{
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #999;
-    line-height: 18px;
-}
-.mint-cell-value .time{
-    font-size: 14px;
-    color: #999;
-    line-height: 18px;
-    align-self: flex-end;
-}
+
 </style>
