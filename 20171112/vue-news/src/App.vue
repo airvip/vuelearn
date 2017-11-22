@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <!-- <loading v-show="loading"></loading> -->
-    <NavView v-show="headerShow"></NavView>
+    <NavView  v-show="headerShow"></NavView>
+
     <div>
       <router-view class="router-view"></router-view>
     </div>
