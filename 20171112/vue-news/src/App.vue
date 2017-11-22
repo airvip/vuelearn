@@ -35,6 +35,11 @@ export default {
   components:{
     NavView,
     FooterView
+  },
+  mounted:function () {
+    if(this.$route.path == '/user-info'){
+      this.$store.dispatch('hideHeader')
+    }
   }
 }
 </script>
