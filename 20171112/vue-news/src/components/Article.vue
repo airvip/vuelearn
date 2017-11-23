@@ -8,8 +8,12 @@
 		</mt-header>
 		<article >					
 			<p>{{articleData.title}}</p>
-			<div class="avatar"><img :src="articleData.author_face" alt=""></div>
-			{{articleData}}
+			<div class="avatar">
+				<img :src="articleData.author_face" alt="">
+			</div>
+			<div class="article-content" v-html="articleData.content">
+				
+			</div>
 		</article>
 		
 	</div>
@@ -48,5 +52,9 @@
     	overflow: hidden;
     	padding: 1rem;
     }
-	.avatar img{width: 100%}
+	.avatar img{
+		width: 5rem;
+		border-radius: 50%;
+		
+	}
 </style>
