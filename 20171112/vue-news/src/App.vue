@@ -28,7 +28,8 @@ export default {
     $route(to,from){
       // console.log('to:'+to.path);
       // console.log('from:'+from.path);
-      if(to.path=='/user-info'){
+      // console.log(to.path.indexOf('/article'));
+      if(to.path=='/user-info' || to.path.indexOf('/article') >= 0){
         this.$store.dispatch('hideHeader')
       }else if(to.path=='/home'){
         this.$store.dispatch('showHeader');
@@ -41,7 +42,7 @@ export default {
     Loading
   },
   mounted:function () {
-    if(this.$route.path == '/user-info'){
+    if(this.$route.path == '/user-info' || this.$route.path.indexOf('/article') >= 0){
       this.$store.dispatch('hideHeader')
     }
   }
@@ -50,6 +51,7 @@ export default {
 
 <style lang="scss">
 body{margin: 0;padding: 0;}
+a{text-decoration: none;}
 #com{margin-bottom: 60px;}
 .mint-cell-value{
   flex-direction: column;
