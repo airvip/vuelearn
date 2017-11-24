@@ -9,6 +9,11 @@ import routerConfig from './router.config.js'
 import store from './store/'
 import axios from 'axios'
 // import Loading from './components/loading'
+import filters from './filters'
+
+console.log(filters);
+// Vue.filter('名字','函数');
+Object.keys(filters).forEach((key)=>Vue.filter(key,filters[key]));
 
 Vue.use(VueRouter);
 // Vue.use(Loading);

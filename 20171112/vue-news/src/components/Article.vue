@@ -11,6 +11,7 @@
 			<div class="avatar">
 				<img :src="articleData.author_face" alt="">
 			</div>
+			<p>{{articleData.time | normalTime}}</p>
 			<div class="article-content" v-html="articleData.content">
 				
 			</div>
