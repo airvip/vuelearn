@@ -4,9 +4,11 @@
     <NavView  v-show="headerShow"></NavView>
 
     <div id="com">
-      <keep-alive>
-        <router-view class="router-view"></router-view>
-      </keep-alive> 
+      <transition name="slide-down">
+        <keep-alive>
+          <router-view class="router-view"></router-view>
+        </keep-alive> 
+      </transition>
     </div>
     <FooterView></FooterView>
     
@@ -77,5 +79,15 @@ a{text-decoration: none;}
     line-height: 18px;
     align-self: flex-end;
 }
-
+.slide-down-enter-active,
+.slide-down-leave-active{
+  transition:.4s all ease;
+  opacity:0.2;
+  transform:translate3d(0,6em,0)
+}
+.slide-down-enter,
+.slide-down-leave{
+  opacity:1;
+  transform:translate3d(0,6em,0)
+}
 </style>
