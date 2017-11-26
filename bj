@@ -8,3 +8,15 @@ module：{
 		{test:/\.css$/,loader:'style-loader!css-loader'}
 	]
 }
+
+
+
+页面性能
+window.performance.timing
+-------------------------------------
+浏览器存储
+window.localStorage
+window.localStorage.setItem('mynane','airvip')
+undefined
+window.localStorage.getItem('mynane')
+"airvip"
