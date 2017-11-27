@@ -20,3 +20,9 @@ window.localStorage.setItem('mynane','airvip')
 undefined
 window.localStorage.getItem('mynane')
 "airvip"
+
+
+var xhr = new XMLHttpRequest();
+
+跨域
+header('Access-Control-Allow-Origin:*');
