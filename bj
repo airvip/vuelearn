@@ -33,4 +33,19 @@ var body = document.getElementByTagName('body');
 body.addEventListener('touchstart',function(){console.log('start')},false)
 
 使用viewport固定整个页面宽度
-<meta name="viewport" content="qidth=device-width,initial-scale=1.0,maxinum-sacle=1.0,user-scalable=no"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+
+移动前端性能陷阱
+1、减少或避免 repaint,reflow[页面重绘，页面回流]
+减少 dom 操作
+
+2、尽量缓存所有可以缓存的数据
+localStorage / sessionStorage / indexedDb
+
+3、使用 CSS3 transform 代替 dom 操作
+
+
+4、不要给非 static 定位元素增加 CSS3 动画 
+absolute 、 relative 定位的元素
+
