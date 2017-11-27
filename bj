@@ -31,3 +31,6 @@ header('Access-Control-Allow-Origin:*');
 给已有网页代码绑定事件
 var body = document.getElementByTagName('body');
 body.addEventListener('touchstart',function(){console.log('start')},false)
+
+使用viewport固定整个页面宽度
+<meta name="viewport" content="qidth=device-width,initial-scale=1.0,maxinum-sacle=1.0,user-scalable=no"/>
