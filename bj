@@ -49,3 +49,5 @@ localStorage / sessionStorage / indexedDb
 4、不要给非 static 定位元素增加 CSS3 动画 
 absolute 、 relative 定位的元素
 
+5、适当使用硬件加速
+
