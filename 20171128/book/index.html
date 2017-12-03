@@ -266,8 +266,8 @@
 				</ul>
 			</div>
 
-			<div class="nav-pannel-bk" style="display: none"></div>
-			<div id="font-container" class="nav-pannel" style="display: none;">
+			<div class="nav-pannel-bk font-container" style="display: none"></div>
+			<div id="font-container" class="nav-pannel font-container" style="display: none;">
 				<div class="child-mod">
 					<span>字号</span>
 					<button id="large-font" class="font-size-button">大</button>
@@ -341,7 +341,9 @@
 				})();
 				var Dom = {
 					top_nav:$('#top-nav'),
-					bottom_nav:$('.bottom_nav')
+					bottom_nav:$('.bottom_nav'),
+					font_container:$('.font-container'),
+					font_button:$('#font-button')
 				}
 
 				var Win = $(window);
@@ -376,7 +378,22 @@
 							Dom.bottom_nav.hide();
 							Dom.top_nav.hide();
 						}
-					})
+					});
+
+					Dom.font_button.click(function(){
+						if(Dom.font_container.css('display') == 'none'){
+							Dom.font_container.show();
+							Dom.font_button.addClass('current');
+						}else{
+							Dom.font_container.hide();
+							Dom.font_button.removeClass('current');
+						}
+					});
+
+					$('#night-button').click(function(){
+						//todo 触发背景切换事件
+
+					});
 
 					Win.scroll(function(){
 						Dom.bottom_nav.hide();
