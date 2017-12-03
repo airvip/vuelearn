@@ -219,7 +219,7 @@
 	</head>
 	<body>
 		<div id="root" class="container">
-			<div id="top-nav" class="top-nav">
+			<div id="top-nav" class="top-nav" style="display: none;">
 				<div class="icon-back"></div>
 				<div class="nav-title">返回书架</div>
 			</div>
@@ -256,8 +256,8 @@
 				</ul>
 			</div>
 
-			<div class="nav-pannel-bk"></div>
-			<div id="font-container" class="nav-pannel">
+			<div class="nav-pannel-bk" style="display: none"></div>
+			<div id="font-container" class="nav-pannel" style="display: none;">
 				<div class="child-mod">
 					<span>字号</span>
 					<button id="large-font" class="font-size-button">大</button>
@@ -271,8 +271,8 @@
 				</div>
 			</div>
 
-			<div class="bottom-nav-bk bottom_nav" style=""></div>
-			<div id="bottom-nav" class="bottom-nav bottom_nav" >
+			<div class="bottom-nav-bk bottom_nav" style="display:none"></div>
+			<div id="bottom-nav" class="bottom-nav bottom_nav" style="display: none">
 				<div class="item menu-button" id="menu_button">
 					<div class="item-warp">
 						<div class="icon-menu"></div>
@@ -318,7 +318,7 @@
 			(function(){
 				var Util = (function(){
 					var prefix = 'html5_reader_';
-					var StorageGetter = functiion(key){
+					var StorageGetter = function(key){
 						return localStorage.getItem(prefix + key);
 					}
 					var StorageSetter = function(key,val){
