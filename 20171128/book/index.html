@@ -348,6 +348,9 @@
 
 				var Win = $(window);
 				var Doc = $(document);
+				var RootContainer = $('#fiction_container');
+				var initFontSize = Util.StorageGetter('font-size') ? parseInt(Util.StorageGetter('font-size')) : 14;
+				RootContainer.css('font-size',initFontSize);
 
 				function main(){
 					//todo 整个项目的入口函数
@@ -377,6 +380,8 @@
 						}else{
 							Dom.bottom_nav.hide();
 							Dom.top_nav.hide();
+							Dom.font_container.hide();
+							Dom.font_button.removeClass('current');
 						}
 					});
 
@@ -395,9 +400,24 @@
 
 					});
 
+					$('#large-font').click(function(){
+						if(initFontSize > 20) return;
+						initFontSize += 1;
+						RootContainer.css('font-size',initFontSize);
+						Util.StorageSetter('font-size',initFontSize);
+					});
+					$('#small-font').click(function(){
+						if(initFontSize < 12) return;
+						initFontSize -= 1;
+						RootContainer.css('font-size',initFontSize);
+						Util.StorageSetter('font-size',initFontSize);
+					});
+
 					Win.scroll(function(){
 						Dom.bottom_nav.hide();
 						Dom.top_nav.hide();
+						Dom.font_container.hide();
+						Dom.font_button.removeClass('current');
 					});
 				}
 
