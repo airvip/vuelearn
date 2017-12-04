@@ -334,6 +334,18 @@
 					var StorageSetter = function(key,val){
 						return localStorage.setItem(prefix + key,val);
 					}
+					var getBSONP = function(url,callback){
+						return $.jsonp({
+							url:url,
+							cache:true,
+							callback:'duokan_fiction_chapter',
+							success:function(result){
+								var data = $.base64.decode(result);
+								var json = decodeURIComponent(escape(data));
+								callback(data);
+							}
+						});
+					}
 					return {
 						StorageGetter:StorageGetter,
 						StorageSetter:StorageSetter
@@ -359,6 +371,22 @@
 
 				function ReaderModel(){
 					//todo 实现和阅读器相关的数据交互方法
+					var getFictionInfo = function(){
+						$.get('/data/chapter.json',function(){
+							//todo 获得章节信息之后的回调
+						},'json');
+					}
+					var getCurChapterContent = function(chapter_id){
+						$.get('data/data' + chapter_id+'.json',function(data){
+							if(data.result == 0){
+								var url = data.jsonp;
+								Util.getBSONP(url,function(data){
+									callback && callback(data);
+								});
+
+							}
+						},'json');
+					}
 				}
 
 				function ReaderBaseFrame(){
