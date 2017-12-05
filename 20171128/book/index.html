@@ -235,7 +235,7 @@
 			</div>
 			<div id="fition_chapter_title"></div>
 			<div id="fiction_container" class="m-read-content">
-				<h4>别哦啊标题</h4>
+				<!-- <h4>别哦啊标题</h4>
 				<p>
 					﻿ε≡٩(๑>₃<)۶ 一心向学*✧⁺˚⁺ପ(๑･ω･)੭ु⁾⁾ 好好学习天天向上(。＿ 。） ✎＿学习计划走起_φ_(．．) 写作业*:ஐ٩(๑´ᵕ`)۶ஐ:* 学习使我进步…φ(๑˃∀˂๑)♪ 学习是我的全部…(:ｪ)|￣|＿上辅导班
 				</p>
@@ -257,7 +257,7 @@
 				</p>
 				<p>
 					﻿ε≡٩(๑>₃<)۶ 一心向学*✧⁺˚⁺ପ(๑･ω･)੭ु⁾⁾ 好好学习天天向上(。＿ 。） ✎＿学习计划走起_φ_(．．) 写作业*:ஐ٩(๑´ᵕ`)۶ஐ:* 学习使我进步…φ(๑˃∀˂๑)♪ 学习是我的全部…(:ｪ)|￣|＿上辅导班
-				</p>
+				</p> -->
 			</div>
 			<div id="m-button-bar">
 				<ul class="u-tab">
@@ -340,9 +340,10 @@
 							cache:true,
 							callback:'duokan_fiction_chapter',
 							success:function(result){
+								// debugger
 								var data = $.base64.decode(result);
 								var json = decodeURIComponent(escape(data));
-								callback(data);
+								callback(json);
 							}
 						});
 					}
@@ -368,17 +369,20 @@
 				function main(){
 					//todo 整个项目的入口函数
 					var readerModel = ReaderModel();
-					readerModel.init();
+					var readerUI = ReaderBaseFrame(RootContainer);
+					readerModel.init(function(data){
+						readerUI(data);
+					});
 					EventHanlder();
 				}
 
 				function ReaderModel(){
 					//todo 实现和阅读器相关的数据交互方法
 					var Chapter_id;
-					var init = function(){
+					var init = function(UIcallback){
 						getFictionInfo(function(){
-							getCurChapterContent(Chapter_id,function(){
-
+							getCurChapterContent(Chapter_id,function(data){
+								UIcallback && UIcallback(data);
 							});
 						});
 					}
@@ -405,8 +409,22 @@
 					}
 				}
 
-				function ReaderBaseFrame(){
+				function ReaderBaseFrame(container){
 					//todo 渲染基本的UI结构
+					function parseChapterData(jsonData){
+						var jsonObj = JSON.parse(jsonData);
+						var html = '<h4>'+jsonObj.t+'</h4>';
+						for(var i = 0;i<jsonObj.p.length;i++){
+							html += "<p>"+jsonObj.p[i]+'</p>';
+						}
+						return html;
+					}
+
+					return function(data){
+						container.html(parseChapterData(data));
+					}
+
+
 				}
 
 
