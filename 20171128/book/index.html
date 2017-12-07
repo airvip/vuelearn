@@ -389,10 +389,10 @@
 								UIcallback && UIcallback(data);
 							});
 						});*/
-						getFictionInFoPromise.then(function(d){
-							getCurChapterContent(Chapter_id,function(data){
-								UIcallback && UIcallback(data);
-							});
+						getFictionInfoPromise().then(function(d){
+							return getCurChapterContentPromise();
+						}).then(function(data){
+							UIcallback && UIcallback(data);
 						});
 					}
 					var getFictionInfo = function(callback){
@@ -408,21 +408,23 @@
 						},'json');
 					}
 
-					var getFictionInFoPromise = new Promise(function(resolve,reject){
-						$.get('data/chapter.json',function(data){
-							//todo 获得章节信息之后的回调
-							if(data.result == 0){
-								Chapter_id = Util.StorageGetter('last_chapter_id');
-								if(Chapter_id == null){
-									Chapter_id = data.chapters[1].chapter_id;
+					var getFictionInfoPromise = function(){
+						return new Promise(function(resolve,reject){
+							$.get('data/chapter.json',function(data){
+								//todo 获得章节信息之后的回调
+								if(data.result == 0){
+									Chapter_id = Util.StorageGetter('last_chapter_id');
+									if(Chapter_id == null){
+										Chapter_id = data.chapters[1].chapter_id;
+									}
+									ChapterTotal = data.chapters.length;
+									resolve();
+								}else{
+									reject();
 								}
-								ChapterTotal = data.chapters.length;
-								resolve();
-							}else{
-								reject();
-							}
-						},'json');
-					});
+							},'json');
+						});
+					}
 
 
 
@@ -436,6 +438,20 @@
 
 							}
 						},'json');
+					}
+					var getCurChapterContentPromise = function(){
+						return new Promise(function(resolve,reject){
+							$.get('data/data' + Chapter_id+'.json',function(data){
+								if(data.result == 0){
+									var url = data.jsonp;
+									Util.getBSONP(url,function(data){
+										resolve(data);
+									});
+								}else{
+									reject({msg:'fail'});
+								}
+							},'json');
+						});
 					}
 					var prevChapter = function(UIcallback){
 						Chapter_id = parseInt(Chapter_id,10);
