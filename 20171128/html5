@@ -1,0 +1,8 @@
+开发模式
+#单例模式
+var single = {
+	'name':'airvip',
+	'getAge':function(){
+	
+	}
+}
