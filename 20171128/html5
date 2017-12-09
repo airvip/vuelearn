@@ -3,6 +3,10 @@
 var single = {
 	'name':'airvip',
 	'getAge':function(){
-	
+
 	}
 }
+
+//创建软连接
+ln -s /home/airvip/node/bin/node /usr/local/bin
+ln -s /home/airvip/node/bin/node /usr/local/bin/nodel
