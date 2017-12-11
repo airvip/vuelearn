@@ -8,7 +8,7 @@
 		"auto-reload":"^0.0.2",
 		"koa":"^1.2.0",
 		"ejs":"^2.4.2",
-		"koa-router":"^2.4.2",
+		"koa-route":"^2.4.2",
 		"koa-views":"^4.1.0",
 		"koa-static-server":"^0.1.8",
 		"n":"^2.1.2",

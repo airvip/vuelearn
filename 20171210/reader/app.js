@@ -1,11 +1,11 @@
 var koa = require('koa');
-var router = require('koa-router');
+var route = require('koa-route');
 var app = koa(); 
 
 // console.log(controller);
 // return;
 
-app.use(router.get('/route_test',function*(){
+app.use(route.get('/route_test',function*(){
 	this.set('Cache-Control','no-cache');
 	this.body = 'hello koa';
 }));
