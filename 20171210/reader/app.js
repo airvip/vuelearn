@@ -31,6 +31,25 @@ app.use(route.get('/api_test',function*(){
 	this.set('Cache-Control','no-cache');
 	this.body = service.get_test_data();
 }));
+app.use(route.get('/ajax/search',function*(){
+	this.set('Cache-Control','no-cache');
+	var querystring = require('querystring');
+	var params = querystring.parse(this.req._parsedUrl.query);
+	var start = params.start;
+	var end = params.end;
+	var keyword = params.keyword;
+	this.body = yield service.get_search_data(start,end,keyword);
+}));
+
+
+
+
+
+
+
+
+
+
 
 app.listen(3001);
 console.log('Koa server is started!');
