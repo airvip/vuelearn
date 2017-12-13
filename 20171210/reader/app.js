@@ -18,6 +18,10 @@ app.use(koa_static({
 
 // console.log(controller);
 // return;
+app.use(route.get('/',function*(){
+	this.set('Cache-Control','no-cache');
+	this.body = yield render('index',{title:'title_test'});
+}));
 
 app.use(route.get('/route_test',function*(){
 	this.set('Cache-Control','no-cache');
