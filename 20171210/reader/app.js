@@ -20,10 +20,15 @@ app.use(koa_static({
 // return;
 app.use(route.get('/',function*(){
 	this.set('Cache-Control','no-cache');
-	this.body = yield render('index',{title:'title_test'});
+	this.body = yield render('index');
 }));
 
-app.use(route.get('/route_test',function*(){
+app.use(route.get('/ajax/index',function*(){
+	this.set('Cache-Control','no-cache');
+	this.body = service.get_index_data();
+}));
+
+/*app.use(route.get('/route_test',function*(){
 	this.set('Cache-Control','no-cache');
 	this.body = 'hello koa';
 }));
@@ -34,7 +39,7 @@ app.use(route.get('/ejs_test',function*(){
 app.use(route.get('/api_test',function*(){
 	this.set('Cache-Control','no-cache');
 	this.body = service.get_test_data();
-}));
+}));*/
 app.use(route.get('/ajax/search',function*(){
 	this.set('Cache-Control','no-cache');
 	var querystring = require('querystring');
