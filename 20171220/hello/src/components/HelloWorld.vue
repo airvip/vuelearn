@@ -1,7 +1,11 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    组件中使用data(){
+    return {
     
+  }
+  }
     </ul>
   </div>
 </template>
