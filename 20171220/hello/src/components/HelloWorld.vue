@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    
     组件中使用data(){
     return {
-    
+
   }
   }
     </ul>
@@ -15,7 +15,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      
     }
   }
 }
