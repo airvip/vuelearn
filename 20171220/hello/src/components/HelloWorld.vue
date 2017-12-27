@@ -1,12 +1,6 @@
 <template>
   <div class="hello">
     
-    组件中使用data(){
-    return {
-
-  }
-  }
-    </ul>
   </div>
 </template>
 
